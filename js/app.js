@@ -1,6 +1,6 @@
-   gameMusic = new Audio('http://youtuberquiz.github.io/src/Where_I_am_From.mp3');
-   rightAnswer = new Audio('http://f5361a5c08a4c03f7c6f-acbeb9602bd0a56bf9c1a6bed3d8280b.r27.cf2.rackcdn.com/RightSound2%202.mp3');
-   wrongAnser = new Audio('http://f5361a5c08a4c03f7c6f-acbeb9602bd0a56bf9c1a6bed3d8280b.r27.cf2.rackcdn.com/wrongSound2.mp3');
+   gameMusic = new Audio('https://youtuberquiz.github.io/src/gameMusic.mp3');
+   rightAnswer = new Audio('https://youtuberquiz.github.io/src/RightSound.mp3');
+   wrongAnser = new Audio('https://youtuberquiz.github.io/src/wrongSound.mp3');
  
    gameMusic.play();
 var points,
@@ -53,7 +53,7 @@ $(function() {
 	// 3
 	function getQuestion(quest) {
 		$.ajax({
-			url 	: 'backend.php?id=' + quest,
+			url 	: 'https://offely-cf.umbler.net/backend.php?id=' + quest,
 			data	: {					// 4
 				action 	: 'get_question',
 				number 	: currentQuestion

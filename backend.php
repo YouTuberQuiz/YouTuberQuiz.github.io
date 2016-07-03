@@ -15,7 +15,7 @@ if(isset($_GET['id']))
 				"A" => 1
 			),
 			array(
-				"Q" => "http://localhost/quizzer/public/mp3/Pluto.mp3",
+				"Q" => "https://youtuberquiz.github.io/public/mp3/Pluto.mp3",
 				"A1" => "Interpretado",
 				"A2" => "Compilado",
 				"A3" => "Los 2 anteriores",
@@ -24,7 +24,7 @@ if(isset($_GET['id']))
 				"A" => 0
 			),
 			array(
-				"Q" => "http://localhost/quizzer/public/img/Sem título 1.png",
+				"Q" => "https://youtuberquiz.github.io/public/img/Sem título 1.png",
 				"A1" => "Python",
 				"A2" => "PHP",
 				"A3" => "Java",
@@ -33,7 +33,7 @@ if(isset($_GET['id']))
 				"A" => 3
 			),
 			array(
-				"Q" => "http://localhost/quizzer/public/mp4/intro.mp4",
+				"Q" => "https://youtuberquiz.github.io/public/mp4/intro.mp4",
 				"A1" => "&lt;?php",
 				"A2" => "&lt;?",
 				"A3" => "Los 2 anteriores",
