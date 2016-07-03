@@ -1,0 +1,171 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+html, html * {
+  font-family: Roboto;
+}
+body {
+	background-color: #CC181E;
+	margin: 0;
+	background-image: url('http://youtuberquiz.github.io/img/bg.png');
+}
+* {
+	box-sizing: border-box;
+}
+.img {
+	width: 100%;
+}
+button.close {
+	border: none;
+	padding: 10px 20px;
+	font-size: 20px;
+	color: #fff;
+	background-color: #ccc;
+}
+button.close:hover {
+	background-color: #444444;
+}
+button.start {
+	border: none;
+	padding: 10px 20px;
+	font-size: 20px;
+	color: #fff;
+	background-color: #CC181E;
+}
+button.start:hover {
+	background-color: #444444;
+}
+button.share {
+	border: none;
+	padding: 10px 20px;
+	font-size: 20px;
+	color: #fff;
+	background-color: #1c8cd8;
+}
+button.share:hover {
+	background-color: #46a0de;
+}
+
+header .title {
+	background-color: rgba(68, 68, 68, 0.59);
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+}
+
+header h1, header h2 {
+	margin: 0;
+}
+
+header div.countdown {
+	display: none;
+	float: right;
+}
+
+header div.points {
+	display: none;
+	float: left;
+	-webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+header div.points.animate.right {
+	color: #767D76;
+}
+
+header div.points.animate.wrong {
+	color: #bf0000;
+}
+
+header div.countdown, header div.points {
+	font-weight: bold;
+	margin: 10px;
+	color: #fff;
+	padding: 0px;
+	font-size: 26px;
+}
+
+.card {
+	width: 25%;
+    background-color: #fff;
+    margin: 15px auto auto 15px;
+    text-align: center;
+    padding:0.01em 20px;
+}
+.card.question {
+    width: 500px;
+    background-color: #fff;
+    margin: 100px auto 30px auto;
+    text-align: center;
+    padding: 20px;
+}
+div.start::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+div.start .card {
+	display: inline-block;
+}
+
+div.start .card p, .question.card span.question {
+	font-size: 25px;
+}
+
+/*.card.question {
+	display: none;
+}*/
+
+.card.question.active {
+	display: block;
+}
+
+.card.question .options {
+	padding: 0;
+	list-style: none;
+	margin-top: 35px;
+}
+
+.card.question .options > li {
+	margin: 10px 80px;
+}
+
+.card.question .options > li label {
+	background-color: #444;
+	color: #fff;
+	display: block;
+	padding: 10px;
+}
+
+.card.question .options > li label:hover {
+	background-color: #676666;
+}
+
+.card.question .options > li input:checked + label {
+	background-color: #4D8E8C !important;
+	color: #fff;
+}
+
+.card.question .options > li input {
+	opacity: 0;
+	display: none;
+}
+
+.finish {
+	display: none;
+}
+
+.card.finish p {
+	font-size: 22px;
+}
+
+.card.finish .final_points {
+	font-size: 40px;
+	font-weight: bolder;
+}
+
+.play_again,
+button.start,
+button.share {
+	width: 200px;
+	margin: 0 auto 20px auto;
+	color: #fff;
+}

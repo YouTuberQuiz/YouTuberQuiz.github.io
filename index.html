@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>YouTuber Quiz - O quanto você sabe do seu youtuber?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="img/favicon.png" type="image/png" rel="icon" />
+    <link href="img/favicon.png" type="image/png" rel="shortcut icon" />     
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/functions.js" ></script>
+    <script src="js/app.js"></script>
+
+    <meta name="description" content="O Maior quiz sobre youtubers brasileiros, e você ainda pode ganhar prêmios."/>
+    <meta property="og:locale" content="pt_BR"/>
+    <meta property="og:title" content="YouTuber Quiz - O quanto você sabe do seu youtuber?" />
+    <meta property="og:image" content="http://youtuberquiz.github.io/img/logo.png"/>
+    <meta property="og:url" content="http://youtuberquiz.github.io/" />
+    <meta property="og:site_name" content="YouTuber Quiz - O quanto você sabe do seu youtuber?" />
+    <meta property="og:description" content="O Maior quiz sobre youtubers brasileiros, e você ainda pode ganhar prêmios." />
+    <meta property="og:type" content="website" />
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>YouTuber Quiz</h1>
+            <h2>O quanto você sabe do seu youtuber?</h2>
+        </div>
+        <div class="countdown"><span class="time_left">12s</span>
+        </div>
+        <div class="points"><span class="points">0 Pontos</span>
+        </div>
+    </header>
+    <div class="start">
+        <div class="card">
+            <p class="quiz_title">Coisa de Nerd</p>
+            <p><img src="img/coisadenerd.jpg"></p>
+            <button class="start" data-quest="02">INICIAR</button>
+        </div>
+        <div class="card">
+            <p class="quiz_title">5incominutos</p>
+            <p><img src="img/5incominutos.jpg"></p>
+            <button class="start" data-quest="03">INICIAR</button>
+        </div>
+        <div class="card">
+            <p class="quiz_title">Manual Do Mundo</p>
+            <p><img src="img/iberethenorio.jpg"></p>
+            <button class="start" data-quest="04">INICIAR</button>
+        </div>
+        <div class="card">
+            <p class="quiz_title">Nostalgia</p>
+            <p><img src="img/fecastanhari.jpg"></p>
+            <button class="start" data-quest="05">INICIAR</button>
+        </div>
+        <div class="card">
+            <p class="quiz_title">Felipe Neto</p>
+            <p><img src="img/felipeneto.jpg"></p>
+            <button class="start" data-quest="06">INICIAR</button>
+        </div>
+        <div class="card">
+            <p class="quiz">CellBits</p>
+            <p><img src="img/CellBits.jpg"></p>
+            <button class="start" data-quest="07">INICIAR</button>
+        </div>
+        <div class="card">
+            <p class="quiz">TazerCraft</p>
+            <p><img src="img/TazerCraft.jpg"></p>
+            <button class="start" data-quest="08">INICIAR</button>
+        </div>
+    </div>
+    <div class="play">
+        <div class="questions"></div>
+    </div>
+    <div class="finish card">
+        <p class="times_up">Seu Tempo Acabou!</p>
+        <p>Você obteve</p>
+        <p class="final_points">8 Pontos</p>
+        <div class="play_again">
+            <button class="close">Voltar a Jogar</button>
+        </div>
+        <button class="share">Compatilhar</button>
+    </div>
+</body>
+
+</html>
