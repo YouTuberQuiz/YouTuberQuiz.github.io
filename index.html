@@ -14,7 +14,7 @@
     <meta name="description" content="O Maior quiz sobre youtubers brasileiros, e você ainda pode ganhar prêmios."/>
     <meta property="og:locale" content="pt_BR"/>
     <meta property="og:title" content="YouTuber Quiz - O quanto você sabe do seu youtuber?" />
-    <meta property="og:image" content="https://youtuberquiz.github.io/img/logo.png"/>
+    <meta property="og:image" content="https://youtuberquiz.github.io/img/icone.png"/>
     <meta property="og:url" content="https://youtuberquiz.github.io/" />
     <meta property="og:site_name" content="YouTuber Quiz - O quanto você sabe do seu youtuber?" />
     <meta property="og:description" content="O Maior quiz sobre youtubers brasileiros, e você ainda pode ganhar prêmios." />
@@ -35,41 +35,46 @@
         <div class="card">
             <p class="quiz_title">Coisa de Nerd</p>
             <p><img src="img/coisadenerd.jpg"></p>
-            <button class="start" data-quest="02">INICIAR</button>
+            <button class="start" data-quest="01">INICIAR</button>
         </div>
         <div class="card">
             <p class="quiz_title">5incominutos</p>
             <p><img src="img/5incominutos.jpg"></p>
-            <button class="start" data-quest="03">INICIAR</button>
+            <button class="start" data-quest="02">INICIAR</button>
         </div>
         <div class="card">
             <p class="quiz_title">Manual Do Mundo</p>
             <p><img src="img/iberethenorio.jpg"></p>
-            <button class="start" data-quest="04">INICIAR</button>
+            <button class="start" data-quest="03">INICIAR</button>
         </div>
         <div class="card">
             <p class="quiz_title">Nostalgia</p>
             <p><img src="img/fecastanhari.jpg"></p>
-            <button class="start" data-quest="05">INICIAR</button>
+            <button class="start" data-quest="04">INICIAR</button>
         </div>
         <div class="card">
             <p class="quiz_title">Felipe Neto</p>
             <p><img src="img/felipeneto.jpg"></p>
-            <button class="start" data-quest="06">INICIAR</button>
+            <button class="start" data-quest="05">INICIAR</button>
         </div>
         <div class="card">
             <p class="quiz">CellBits</p>
             <p><img src="img/CellBits.jpg"></p>
-            <button class="start" data-quest="07">INICIAR</button>
+            <button class="start" data-quest="06">INICIAR</button>
         </div>
         <div class="card">
             <p class="quiz">TazerCraft</p>
             <p><img src="img/TazerCraft.jpg"></p>
-            <button class="start" data-quest="08">INICIAR</button>
+            <button class="start" data-quest="07">INICIAR</button>
         </div>
     </div>
     <div class="play">
         <div class="questions"></div>
+    </div>
+    <div class="popup card" style="display: none">
+        <p class="times_up">Seu Tempo Acabou!</p>
+        <p>Você obteve</p>
+        <p class="final_points">8 Pontos</p>
     </div>
     <div class="finish card">
         <p class="times_up">Seu Tempo Acabou!</p>
@@ -78,7 +83,7 @@
         <div class="play_again">
             <button class="close">Voltar a Jogar</button>
         </div>
-        <button class="share">Compatilhar</button>
+        <a class="twitter" href=""><button class="share">Compatilhar</button></a>
     </div>
 </body>
 

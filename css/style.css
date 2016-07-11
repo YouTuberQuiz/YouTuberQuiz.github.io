@@ -1,17 +1,20 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 html, html * {
   font-family: Roboto;
 }
 body {
 	background-color: #CC181E;
 	margin: 0;
-	background-image: url('https://youtuberquiz.github.io/img/bg.png');
+	background-image: url('http://localhost/youtuberquiz/img/bg.png');
 }
 * {
 	box-sizing: border-box;
 }
+header {
+    width: 100%;
+}
 .img {
-	width: 100%;
+	width: 50%;
 }
 button.close {
 	border: none;
@@ -84,16 +87,33 @@ header div.countdown, header div.points {
 }
 
 .card {
-	width: 25%;
+	width: 23%;
     background-color: #fff;
     margin: 15px auto auto 15px;
     text-align: center;
     padding:0.01em 20px;
 }
+
+.finish.card,
 .card.question {
     width: 500px;
     background-color: #fff;
     margin: 100px auto 30px auto;
+    text-align: center;
+    padding: 20px;
+}
+.popup.card {
+border: 3px solid #000;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    top: 80px;
+    position: absolute;
+    width: 500px;
+    background-color: #fff;
     text-align: center;
     padding: 20px;
 }
@@ -168,4 +188,42 @@ button.share {
 	width: 200px;
 	margin: 0 auto 20px auto;
 	color: #fff;
+}
+@media only screen and (max-width: 767px) {
+	.card {
+		width: 93%;
+	    background-color: #fff;
+	    margin: 15px auto auto 15px;
+	    text-align: center;
+	    padding:0.01em 20px;
+	}
+	.card.question {
+	    width: 93%;
+	    background-color: #fff;
+	    margin: 100px auto 30px auto;
+	    text-align: center;
+	    padding: 20px;
+	}
+	div.start .card {
+		display: inline-block;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.card {
+		width: 47%;
+	    background-color: #fff;
+	    margin: 15px auto auto 15px;
+	    text-align: center;
+	    padding:0.01em 20px;
+	}
+	.card.question {
+	    width: 93%;
+	    background-color: #fff;
+	    margin: 100px auto 30px auto;
+	    text-align: center;
+	    padding: 20px;
+	}
+	div.start .card {
+		display: inline-block;
+	}
 }

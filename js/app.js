@@ -2,14 +2,14 @@
    rightAnswer = new Audio('https://youtuberquiz.github.io/src/RightSound.mp3');
    wrongAnser = new Audio('https://youtuberquiz.github.io/src/wrongSound.mp3');
  
-   gameMusic.play();
+   //gameMusic.play();
 var points,
 	pointsPerQuestion,
 	currentQuestion,
 	questionTimer,
-	timeForQuestion = 30, // seconds
+	timeForQuestion = 60, // seconds
 	timeLeftForQuestion,
-	questions = 5;  // 1
+	questions = 1;  // 1
 
 $(function() {
 
@@ -47,7 +47,15 @@ $(function() {
 	// 2
 	function moveToNextQuestion(quest) {
 		currentQuestion += 1;
+		myVar = setTimeout(function(){ 
+		wrongAnser.pause();
+		rightAnswer.pause();
+		rightAnswer.currentTime = 0;
+		wrongAnser.currentTime = 0;
 		getQuestion(quest);
+		clearTimeout(myVar);
+		 }, 700);
+
 	}
 
 	// 3
@@ -109,7 +117,7 @@ $(function() {
 	function checkAnswer(selected) {
 		var quest = getCookie("quest");
 		$.ajax({
-			url 	: 'backend.php',
+			url 	: 'https://offely-cf.umbler.net/backend.php?id=' + quest,
 			data	: {
 				action 	: 'check_answer',
 				number 	: currentQuestion,
@@ -157,7 +165,14 @@ $(function() {
 		if (timeLeftForQuestion == 0) {
 			$('.times_up').show();
 		}
+		var quest = getCookie("quest");
+		if(quest==01)
+		{
+			var user = "cdnleon";
+			var urlx = "CoisaDeNerd";
+		}
 		$('p.final_points').html(points + ' pontos');
+		$('.twitter').attr("href", "https://twitter.com/intent/tweet?url=http://youtuberquiz.com/#" + urlx + "&text=Eu%20Fiz%20" + points + "%20pontos%20no%20@YoutuberQuizCom%20do%20@" + user + ",%20e%20voc%C3%AA%20quanto%20vai%C3%A1%20fazer%20?");
 		$('.question.card:visible').hide();
 		$('.finish.card').show();
 		$('.countdown').css('display', 'none');
