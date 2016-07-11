@@ -2,14 +2,14 @@
    rightAnswer = new Audio('https://youtuberquiz.github.io/src/RightSound.mp3');
    wrongAnser = new Audio('https://youtuberquiz.github.io/src/wrongSound.mp3');
  
-   //gameMusic.play();
+   gameMusic.play();
 var points,
 	pointsPerQuestion,
 	currentQuestion,
 	questionTimer,
 	timeForQuestion = 60, // seconds
 	timeLeftForQuestion,
-	questions = 1;  // 1
+	questions = 30;  // 1
 
 $(function() {
 
